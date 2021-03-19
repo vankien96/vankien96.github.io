@@ -10,6 +10,8 @@ body {
     font-size: 40px;
     text-align: center;
     background-image: url("https://ssl.gstatic.com/atari/images/simple-header-blended-small.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 250px;
   }
   

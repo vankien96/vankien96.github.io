@@ -317,6 +317,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
+    background-image: url(../images/img_bg_2_small.jpg);
     height: 600px;
   }
 }
