@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-cover {
   height: 900px;
-  background-image: url(../images/img_bg_2.jpg);
+  background-image: var(--imageURL);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -317,7 +317,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    background-image: url(../images/img_bg_2_small.jpg);
+    background-image: var(--imageSmallURL);
     height: 600px;
   }
 }
