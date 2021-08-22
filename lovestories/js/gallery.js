@@ -28,7 +28,44 @@ var sontra = seperateImages(sontraString);
 let tamhaiString = "20200627_163107_002_saved.jpg IMG_20200627_154702.jpg IMG_20200627_135223.jpg IMG_20200627_154827.jpg IMG_20200627_141723.jpg IMG_20200627_160110.jpg IMG_20200627_142337.jpg IMG_20200627_221804.jpg IMG_20200627_144609.jpg IMG_20200627_222234.jpg IMG_20200627_145643.jpg PANO_20200627_150857.jpg IMG_20200627_152237.jpg PANO_20200627_151542.jpg"
 var tamhai = seperateImages(tamhaiString);
 
-var allImages = {"dalat": dalats, "vungtau": vungtaus, "sontra": sontra, "tamhai": tamhai}
+let namoString = "IMG_20200531_164956.jpg IMG_20200531_170422.jpg IMG_20200531_172420.jpg IMG_20200531_165323.jpg IMG_20200531_170613.jpg IMG_20200531_173833.jpg IMG_20200531_165510.jpg IMG_20200531_171018.jpg IMG_20200531_174214.jpg"
+var namo = seperateImages(namoString);
+
+let danangString = "IMG_20200505_215735.jpg IMG_20200507_183759.jpg IMG_20200507_183955.jpg IMG_20200507_183732.jpg IMG_20200507_183851.jpg IMG_20200507_184636.jpg"
+var danang = seperateImages(danangString);
+
+let graString = "IMG_20200330_083506.jpg IMG_20200330_083606.jpg IMG_20200330_083947.jpg"
+var graduation = seperateImages(graString);
+
+let hoatrungString = "20200229_185309255.jpeg IMG_20200301_165130.jpg IMG_20200301_170404.jpg IMG_20200229_183126.jpg IMG_20200301_165735.jpg IMG_20200301_170423.jpg IMG_20200301_164445.jpg IMG_20200301_165937.jpg IMG_20200301_170807.jpg IMG_20200301_164713.jpg IMG_20200301_170112.jpg IMG_20200301_171653.jpg"
+var hoatrung = seperateImages(hoatrungString);
+
+let hueString = "IMG_20200223_142522.jpg IMG_20200223_150003.jpg IMG_20200223_195737.jpg IMG_20200223_142707.jpg IMG_20200223_150235.jpg IMG_20200224_085023.jpg IMG_20200223_143350.jpg IMG_20200223_185054.jpg IMG_20200224_085046.jpg IMG_20200223_143433.jpg IMG_20200223_185726.jpg IMG_20200224_090823.jpg IMG_20200223_145344.jpg IMG_20200223_193250.jpg IMG_20200224_091111.jpg IMG_20200223_145613.jpg IMG_20200223_195317.jpg IMG_20200224_113015.jpg IMG_20200223_145902.jpg IMG_20200223_195431.jpg IMG_20200224_113108.jpg IMG_20200223_145928.jpg IMG_20200223_195552.jpg dsadsa_COVER.jpg"
+var hue = seperateImages(hueString);
+
+let quangtri1String = "331546266810866_20200222_212307792.jpeg IMG_20200222_163742.jpg IMG_20200222_161648.jpg IMG_20200222_212349.jpg IMG_20200222_161820.jpg IMG_20200222_212402.jpg IMG_20200222_162012.jpg IMG_20200222_214139.jpg IMG_20200222_163328.jpg"
+var quangtri1 = seperateImages(quangtri1String);
+
+let quangtri2String = "20200202_095634794.jpeg IMG_20200201_155040.jpg 20200202_100850555.jpeg IMG_20200201_155211.jpg 20200202_102248950-01.jpeg IMG_20200201_155452.jpg"
+var quangtri2 = seperateImages(quangtri2String);
+
+let hoianString = "IMG_20191229_154334.jpg IMG_20191229_160022.jpg IMG_20191229_162700.jpg IMG_20191229_154421.jpg IMG_20191229_160026.jpg IMG_20191229_162818.jpg IMG_20191229_155130.jpg IMG_20191229_161306.jpg IMG_20191229_164702.jpg IMG_20191229_155224.jpg IMG_20191229_161408.jpg IMG_20191229_165007.jpg IMG_20191229_155501.jpg IMG_20191229_162445.jpg"
+var hoian = seperateImages(hoianString);
+
+let sontra2String = "20191124_163013568.jpeg BURST20191123205153454_COVER.jpg 20191124_215110482.jpeg IMG_20191124_163608.jpg 20191124_215227358.jpeg IMG_20191124_170812.jpg 20191124_222600206.jpeg IMG_20191124_170910.jpg 20191124_222750079.jpeg"
+var sontra2 = seperateImages(sontra2String);
+
+let thienvienString = "IMG_3590.JPG IMG_3602.JPG IMG_3617.JPG IMG_3598.JPG IMG_3615.JPG ThienVien.png"
+var thienvien = seperateImages(thienvienString);
+
+let firsttimeString = "IMG_0754.JPG IMG_1542.JPG IMG_1782.JPG IMG_1785.JPG IMG_0755.JPG IMG_1722.JPG"
+var firsttime = seperateImages(firsttimeString);
+
+var allImages = {
+    "dalat": dalats, "vungtau": vungtaus, "sontra": sontra, "tamhai": tamhai, 
+    "namo": namo, "graduation": graduation, "hoatrung": hoatrung, "hue": hue, 
+    "quangtri1": quangtri1, "quangtri2": quangtri2, "hoian": hoian, "sontra2": sontra2,
+    "thienvien": thienvien, "firsttime": firsttime}
 
 loadGalleries()
 
