@@ -28,7 +28,7 @@ var sontra = seperateImages(sontraString);
 let tamhaiString = "20200627_163107_002_saved.jpg IMG_20200627_154702.jpg IMG_20200627_135223.jpg IMG_20200627_154827.jpg IMG_20200627_141723.jpg IMG_20200627_160110.jpg IMG_20200627_142337.jpg IMG_20200627_221804.jpg IMG_20200627_144609.jpg IMG_20200627_222234.jpg IMG_20200627_145643.jpg PANO_20200627_150857.jpg IMG_20200627_152237.jpg PANO_20200627_151542.jpg"
 var tamhai = seperateImages(tamhaiString);
 
-let namoString = "IMG_20200531_164956.jpg IMG_20200531_170422.jpg IMG_20200531_172420.jpg IMG_20200531_165323.jpg IMG_20200531_170613.jpg IMG_20200531_173833.jpg IMG_20200531_165510.jpg IMG_20200531_171018.jpg IMG_20200531_174214.jpg"
+let namoString = "IMG_20200531_164956.jpg IMG_20200531_170252.jpg IMG_20200531_173455.jpg IMG_20200531_165308.jpg IMG_20200531_170613.jpg IMG_20200531_174214.jpg IMG_20200531_165518.jpg IMG_20200531_172508.jpg"
 var namo = seperateImages(namoString);
 
 let danangString = "IMG_20200505_215735.jpg IMG_20200507_183759.jpg IMG_20200507_183955.jpg IMG_20200507_183732.jpg IMG_20200507_183851.jpg IMG_20200507_184636.jpg"
@@ -63,7 +63,7 @@ var firsttime = seperateImages(firsttimeString);
 
 var allImages = {
     "dalat": dalats, "vungtau": vungtaus, "sontra": sontra, "tamhai": tamhai, 
-    "namo": namo, "graduation": graduation, "hoatrung": hoatrung, "hue": hue, 
+    "namo": namo, "danang": danang, "graduation": graduation, "hoatrung": hoatrung, "hue": hue, 
     "quangtri1": quangtri1, "quangtri2": quangtri2, "hoian": hoian, "sontra2": sontra2,
     "thienvien": thienvien, "firsttime": firsttime}
 
