@@ -1,4 +1,7 @@
 
+var tet2022String = "IMG_20220206_150559.jpg IMG_20220207_154433.jpg IMG_20220207_222609.jpg IMG_20220206_151712.jpg IMG_20220207_221828.jpg IMG_20220207_222718.jpg IMG_20220206_153117.jpg IMG_20220207_221936.jpg IMG_20220207_222814.jpg IMG_20220206_154247.jpg IMG_20220207_222130.jpg IMG_20220207_223211.jpg IMG_20220206_161005.jpg IMG_20220207_222222.jpg IMG_20220207_223741.jpg IMG_20220207_153859.jpg IMG_20220207_222417.jpg IMG_20220208_095705.jpg IMG_20220207_154255.jpg IMG_20220207_222446.jpg"
+var tet2022 = seperateImages(tet2022String);
+
 var dalats = ["IMG_20210430_120521.jpg", "IMG_4548.jpg", "IMG_4594.jpg",
     "IMG_20210430_164741.jpg", "IMG_4551.jpg", "IMG_4605.jpg",
     "IMG_4262.jpg", "IMG_4552.jpg", "IMG_4612.jpg",
@@ -62,6 +65,7 @@ let firsttimeString = "IMG_0754.JPG IMG_1542.JPG IMG_1782.JPG IMG_1785.JPG IMG_0
 var firsttime = seperateImages(firsttimeString);
 
 var allImages = {
+    "tet2022": tet2022,
     "dalat": dalats, "vungtau": vungtaus, "sontra": sontra, "tamhai": tamhai, 
     "namo": namo, "danang": danang, "graduation": graduation, "hoatrung": hoatrung, "hue": hue, 
     "quangtri1": quangtri1, "quangtri2": quangtri2, "hoian": hoian, "sontra2": sontra2,
