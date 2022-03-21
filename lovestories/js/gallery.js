@@ -1,3 +1,5 @@
+var vungtau2022String = "IMG_8446.jpg IMG_0044.jpg IMG_0185.jpg IMG_0260.jpg IMG_0329.jpg IMG_0045.jpg IMG_0199.jpg IMG_0271.jpg IMG_1646064.jpeg IMG_0063.jpg IMG_0218.jpg IMG_0275.jpg IMG_20220228.jpg IMG_0151.jpg IMG_0230.jpg IMG_0303.jpg IMG_8424.jpg IMG_0165.jpg IMG_0233.jpg IMG_0312.jpg IMG_8443.jpg IMG_0177.jpg IMG_0236.jpg IMG_0327.jpg"
+var vungtau2022 = seperateImages(vungtau2022String);
 
 var tet2022String = "IMG_20220206_150559.jpg IMG_20220207_154433.jpg IMG_20220207_222609.jpg IMG_20220206_151712.jpg IMG_20220207_221828.jpg IMG_20220207_222718.jpg IMG_20220206_153117.jpg IMG_20220207_221936.jpg IMG_20220207_222814.jpg IMG_20220206_154247.jpg IMG_20220207_222130.jpg IMG_20220207_223211.jpg IMG_20220206_161005.jpg IMG_20220207_222222.jpg IMG_20220207_223741.jpg IMG_20220207_153859.jpg IMG_20220207_222417.jpg IMG_20220208_095705.jpg IMG_20220207_154255.jpg IMG_20220207_222446.jpg"
 var tet2022 = seperateImages(tet2022String);
@@ -52,7 +54,7 @@ var quangtri1 = seperateImages(quangtri1String);
 let quangtri2String = "20200202_095634794.jpeg IMG_20200201_155040.jpg 20200202_100850555.jpeg IMG_20200201_155211.jpg 20200202_102248950-01.jpeg IMG_20200201_155452.jpg"
 var quangtri2 = seperateImages(quangtri2String);
 
-let hoianString = "IMG_20191229_154334.jpg IMG_20191229_160022.jpg IMG_20191229_162700.jpg IMG_20191229_154421.jpg IMG_20191229_160026.jpg IMG_20191229_162818.jpg IMG_20191229_155130.jpg IMG_20191229_161306.jpg IMG_20191229_164702.jpg IMG_20191229_155224.jpg IMG_20191229_161408.jpg IMG_20191229_165007.jpg IMG_20191229_155501.jpg IMG_20191229_162445.jpg"
+let hoianString = "IMG_20191229_160022.jpg IMG_20191229_154334.jpg IMG_20191229_162700.jpg IMG_20191229_154421.jpg IMG_20191229_160026.jpg IMG_20191229_162818.jpg IMG_20191229_155130.jpg IMG_20191229_161306.jpg IMG_20191229_164702.jpg IMG_20191229_155224.jpg IMG_20191229_161408.jpg IMG_20191229_165007.jpg IMG_20191229_155501.jpg IMG_20191229_162445.jpg"
 var hoian = seperateImages(hoianString);
 
 let sontra2String = "20191124_163013568.jpeg BURST20191123205153454_COVER.jpg 20191124_215110482.jpeg IMG_20191124_163608.jpg 20191124_215227358.jpeg IMG_20191124_170812.jpg 20191124_222600206.jpeg IMG_20191124_170910.jpg 20191124_222750079.jpeg"
@@ -65,6 +67,7 @@ let firsttimeString = "IMG_0754.JPG IMG_1542.JPG IMG_1782.JPG IMG_1785.JPG IMG_0
 var firsttime = seperateImages(firsttimeString);
 
 var allImages = {
+    "vungtau2022": vungtau2022,
     "tet2022": tet2022,
     "dalat": dalats, "vungtau": vungtaus, "sontra": sontra, "tamhai": tamhai, 
     "namo": namo, "danang": danang, "graduation": graduation, "hoatrung": hoatrung, "hue": hue, 
@@ -99,6 +102,7 @@ function loadGalleries() {
         </li>`;
     }
     document.getElementById('fh5co-gallery-list').insertAdjacentHTML('afterbegin', inputs);
+    changeHeaderStyle(images[0])
 }
 
 function findGetParameter(parameterName) {
@@ -114,4 +118,8 @@ function findGetParameter(parameterName) {
 
 function seperateImages(string) {
     return string.split(" ")
+}
+
+function changeHeaderStyle(image) {
+    document.getElementById('fh5co-header').style = `--imageURL: url(../images/galleries/${image}); --imageSmallURL: url(../images/galleries/${image})`
 }

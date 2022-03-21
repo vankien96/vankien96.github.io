@@ -78,6 +78,7 @@ function showTimelines() {
 
 function loadAllImages() {
     imageInfos = [
+        {address: "Vung Tau 2022", date: "Feb 28 2022", src: "gallery-17.jpg", id: "vungtau2022"},
         {address: "Tet 2022", date: "Feb 6 2022", src: "gallery-16.jpg", id: "tet2022"},
         {address: "Da Lat", date: "May 1 2021", src: "gallery-15.jpg", id: "dalat"},
         {address: "Vung Tau", date: "January 3 2021", src: "gallery-1.jpg", id: "vungtau"},
