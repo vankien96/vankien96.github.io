@@ -1,3 +1,9 @@
+var saigon2022String = "IMG_1278.jpeg IMG_1329.jpeg IMG_1374.jpeg IMG_1405.jpeg IMG_1474.jpeg IMG_1282.jpeg IMG_1342.jpeg IMG_1383.jpeg IMG_1436.jpeg IMG_1483.jpeg IMG_1311.jpeg IMG_1354.jpeg IMG_1397.jpeg IMG_1445.jpeg IMG_1510.jpeg IMG_1328.jpeg IMG_1364.jpeg IMG_1399.jpeg IMG_1468.jpeg"
+var saigon2022 = seperateImages(saigon2022String);
+
+var tsnt15String = "IMG_1741.jpeg IMG_1852.jpeg IMG_1897.jpeg IMG_1942.jpeg IMG_1953.jpeg IMG_1794.jpeg IMG_1878.jpeg IMG_1909.jpeg IMG_1945.jpeg IMG_1954.jpeg IMG_1815.jpeg IMG_1886.jpeg IMG_1912.jpeg IMG_1948.jpeg IMG_1955_2.JPG IMG_1818.jpeg IMG_1890.jpeg IMG_1928.jpeg IMG_1951.jpeg"
+var tsnt15 = seperateImages(tsnt15String);
+
 var vungtau2022String = "IMG_8446.jpg IMG_0044.jpg IMG_0185.jpg IMG_0260.jpg IMG_0329.jpg IMG_0045.jpg IMG_0199.jpg IMG_0271.jpg IMG_1646064.jpeg IMG_0063.jpg IMG_0218.jpg IMG_0275.jpg IMG_20220228.jpg IMG_0151.jpg IMG_0230.jpg IMG_0303.jpg IMG_8424.jpg IMG_0165.jpg IMG_0233.jpg IMG_0312.jpg IMG_8443.jpg IMG_0177.jpg IMG_0236.jpg IMG_0327.jpg"
 var vungtau2022 = seperateImages(vungtau2022String);
 
@@ -67,6 +73,8 @@ let firsttimeString = "IMG_0754.JPG IMG_1542.JPG IMG_1782.JPG IMG_1785.JPG IMG_0
 var firsttime = seperateImages(firsttimeString);
 
 var allImages = {
+    "saigon2022": saigon2022,
+    "tsnt15": tsnt15,
     "vungtau2022": vungtau2022,
     "tet2022": tet2022,
     "dalat": dalats, "vungtau": vungtaus, "sontra": sontra, "tamhai": tamhai, 
