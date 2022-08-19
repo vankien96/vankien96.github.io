@@ -1,3 +1,6 @@
+var singaporeString = "20220815_140109.jpeg IMG_0375.jpeg IMG_0640.jpeg 20220815_143542.jpeg IMG_0417.jpeg IMG_0657.jpeg IMG-20220814-WA0002.jpeg IMG_0425.jpeg IMG_0666.jpeg IMG_0185.jpeg IMG_0442.jpeg IMG_0693.jpeg IMG_0205.jpeg IMG_0444.jpeg IMG_0696.jpeg IMG_0222.jpeg IMG_0445.jpeg IMG_0708.jpeg IMG_0225.jpeg IMG_0463.jpeg IMG_0713.jpeg IMG_0235.jpeg IMG_0478.jpeg IMG_0720.jpeg IMG_0238.jpeg IMG_0502.jpeg IMG_0725.jpeg IMG_0274.jpeg IMG_0508.jpeg IMG_0757.jpeg IMG_0282.jpeg IMG_0538.jpeg IMG_3542.jpeg IMG_0290.jpeg IMG_0613.jpeg IMG_0344.jpeg IMG_0618.jpeg"
+var singapore = seperateImages(singaporeString);
+
 var saigon2022String = "IMG_1278.jpeg IMG_1329.jpeg IMG_1374.jpeg IMG_1405.jpeg IMG_1474.jpeg IMG_1282.jpeg IMG_1342.jpeg IMG_1383.jpeg IMG_1436.jpeg IMG_1483.jpeg IMG_1311.jpeg IMG_1354.jpeg IMG_1397.jpeg IMG_1445.jpeg IMG_1510.jpeg IMG_1328.jpeg IMG_1364.jpeg IMG_1399.jpeg IMG_1468.jpeg"
 var saigon2022 = seperateImages(saigon2022String);
 
@@ -73,6 +76,7 @@ let firsttimeString = "IMG_0754.JPG IMG_1542.JPG IMG_1782.JPG IMG_1785.JPG IMG_0
 var firsttime = seperateImages(firsttimeString);
 
 var allImages = {
+    "singapore": singapore,
     "saigon2022": saigon2022,
     "tsnt15": tsnt15,
     "vungtau2022": vungtau2022,
@@ -106,7 +110,7 @@ function loadGalleries() {
     for (var i = 0; i < images.length; i++) {
         inputs += `
         <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/galleries/${images[i]});"> 
-            <a data-lightbox="image-1" href="images/galleries/${images[i]}" class="color-2"></a> 
+ <a data-lightbox="image-1" href="images/galleries/${images[i]}" class="color-2"></a> 
         </li>`;
     }
     document.getElementById('fh5co-gallery-list').insertAdjacentHTML('afterbegin', inputs);
