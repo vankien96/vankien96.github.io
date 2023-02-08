@@ -75,7 +75,12 @@ var thienvien = seperateImages(thienvienString);
 let firsttimeString = "IMG_0754.JPG IMG_1542.JPG IMG_1782.JPG IMG_1785.JPG IMG_0755.JPG IMG_1722.JPG"
 var firsttime = seperateImages(firsttimeString);
 
+let tet2023String = "IMG_4216.jpeg IMG_4460.jpeg IMG_4537.jpeg IMG_4696.jpeg IMG_4704.jpeg IMG_4329.jpeg IMG_4471.jpeg IMG_4602.jpeg IMG_4700.jpeg IMG_4705.jpeg IMG_4346.jpeg IMG_4478.jpeg IMG_4619.jpeg IMG_4701.jpeg IMG_4359.jpeg IMG_4487.jpeg IMG_4635.jpeg IMG_4702.jpeg IMG_4423.jpeg IMG_4506.jpeg IMG_4648.jpeg IMG_4703.jpeg"
+var tet2023 = seperateImages(tet2023String);
+tet2023 = tet2023.map(x => "12023/" + x);
+
 var allImages = {
+    "tet2023": tet2023,
     "singapore": singapore,
     "saigon2022": saigon2022,
     "tsnt15": tsnt15,
